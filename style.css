@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Geologica", sans-serif;
+  scroll-behavior: smooth;
+}
+
+figure {
+  margin: 15px;
+}
+
+figcaption {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+nav {
+  background-color: #000;
+  min-height: 100vh;
+  max-width: 25%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+
+nav .mini figure img {
+  border-radius: 50%;
+  padding: 7px;
+  background-color: #d6c0c0;
+  margin-top: 10px;
+}
+
+nav .mini {
+  color: #fff;
+  text-align: center;
+}
+
+nav .mini .sosmed img {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(44, 43, 43);
+  border-radius: 50%;
+  width: 15%;
+  margin: 7px;
+  filter: saturate(0%);
+  transition: 0.2s;
+}
+
+nav .mini .sosmed img:hover {
+  background-color: #403131;
+  filter: saturate(100%);
+}
+
+nav ul {
+  margin: 40px 20px;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #c4b0b0;
+}
+
+.bg-img {
+  background-image: url(img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: brightness(50%);
+  height: 100vh;
+}
+
+.hero h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #ece4e4;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+}
+
+.hero p {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ece4e4;
+}
+
+section {
+  padding: 30px 0 30px 27%;
+}
+
+h1 {
+  position: relative;
+  padding: 10px 0;
+  margin: 20px 0;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: black;
+  bottom: 0;
+  left: 0;
+}
+
+.row {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.col {
+  padding-right: 20px;
+}
+
+.col ul li {
+  list-style-type: none;
+  padding: 10px;
+  position: relative;
+  margin-left: 10px;
+}
+
+.col ul li::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 8px 0 0;
+  border-color: #000 transparent;
+  transform: rotate(135deg);
+}
+
+.skills,
+.services {
+  background-color: rgba(214, 192, 192, 0.351);
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.row.skill {
+  justify-content: space-around;
+}
+
+.skills .learn {
+  margin: 30px 0 0 0;
+  text-align: center;
+}
+
+.projects .card {
+  min-width: calc(1600px / 5);
+  max-width: calc(1600px / 5);
+  max-height: calc(900px / 5);
+  background-color: lightblue;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.projects .card .main-card {
+  background-color: #fff;
+}
+
+.services .card {
+  min-width: 300px;
+  max-width: 300px;
+  min-height: 200px;
+  max-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+  transition: 0.3s;
+  margin: 10px;
+  align-items: center;
+}
+
+.services .card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.services .card a {
+  border: 1px solid black;
+  color: #000;
+  width: 35%;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.services .card a:hover {
+  background-color: #403131;
+  color: #e9e0e0;
+  border: 1px solid #403131;
+}
+
+.services .card h2,
+.services .card p,
+.services .card a {
+  margin: 5px;
+}
