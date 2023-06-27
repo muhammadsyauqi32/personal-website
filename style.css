@@ -261,3 +261,38 @@ h1::after {
 .services .card a {
   margin: 5px;
 }
+
+label {
+  padding: 10px;
+  margin: 20px 0;
+}
+
+form {
+  width: 100%;
+}
+
+input,
+textarea,
+button {
+  padding: 10px;
+  outline: none;
+  margin: 10px;
+  width: 40%;
+}
+
+button {
+  border: 1px solid rgba(0, 0, 0, 0.311);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.702);
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: #403131;
+  color: #e9e0e0;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
