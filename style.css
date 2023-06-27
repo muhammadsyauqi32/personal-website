@@ -125,6 +125,11 @@ h1::after {
   margin-top: 25px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about .row {
+  flex-wrap: nowrap;
 }
 
 .col {
@@ -168,17 +173,50 @@ h1::after {
 }
 
 .projects .card {
-  min-width: calc(1600px / 5);
-  max-width: calc(1600px / 5);
-  max-height: calc(900px / 5);
-  background-color: lightblue;
+  min-width: calc(1500px / 5);
+  max-width: calc(1500px / 5);
+  min-height: 400px;
+  max-height: 400px;
   overflow: hidden;
   border-radius: 10px;
-  border: 1px solid black;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.751);
+  /* border: 1px solid black; */
+  margin: 5px;
+  position: relative;
+  transition: 0.4s;
+}
+
+.projects .card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.751);
+}
+
+.projects .card .card-head {
+  max-height: 38%;
+  overflow: hidden;
 }
 
 .projects .card .main-card {
   background-color: #fff;
+  padding: 10px;
+}
+
+.projects .card .main-card h3,
+.projects .card .main-card p {
+  padding: 10px 0;
+}
+
+.projects .card .foot-card {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+}
+
+.projects .card .foot-card a {
+  background-color: rgba(128, 128, 128, 0.145);
+  box-shadow: 0 0 1px black;
+  text-align: center;
+  padding: 15px calc(1500px / 5 / 5 + 2px);
 }
 
 .services .card {
